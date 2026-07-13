@@ -89,7 +89,7 @@ cd patient-registration-system
 Install the required libraries:
 
 ```bash
-pip install PyQt6 openpyxl reportlab
+pip install -r requirements.txt
 ```
 
 Run the application:
