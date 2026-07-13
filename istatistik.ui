@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>206</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #EAF4FF;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: lightblue;
+}</string>
+   </property>
+   <property name="text">
+    <string>📊 HASTA İSTATİSTİKLERİ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Kapat">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>480</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Kapat</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_Genel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>171</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="title">
+    <string>Genel Bilgiler</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label_Toplam">
+       <property name="text">
+        <string>Toplam Hasta</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Yatan">
+       <property name="text">
+        <string>Yatan</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Taburcu">
+       <property name="text">
+        <string>Taburcu</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Poliklinik">
+       <property name="text">
+        <string>Poliklinik Sayısı</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Erkek">
+       <property name="text">
+        <string>Erkek</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Kadin">
+       <property name="text">
+        <string>Kadın</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_OrtalamaYas">
+       <property name="text">
+        <string>Ortalama Yaş</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_Kan">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>171</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Kan Grupları</string>
+   </property>
+   <widget class="QTextEdit" name="textEdit_KanGruplari">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <zorder>groupBox_Kan</zorder>
+  <zorder>groupBox_Genel</zorder>
+  <zorder>label</zorder>
+  <zorder>btn_Kapat</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
